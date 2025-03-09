@@ -15,14 +15,10 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-z9$d9g@a7#=n&-o0kqkx1yp=^36#s#*cw-n+ewtv6@7$kcr24&'
 
-# SECURITY WARNING: don't run with debug turned on in production!
+SECRET_KEY = ''
+
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -37,8 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'login',
-    'signup',
+    'app1'
 ]
 
 MIDDLEWARE = [
@@ -75,16 +70,18 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'website',
-        'USER': 'root',
-        'PASSWORD': '#Farhan786#',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
-}
+#for mysql data base
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'login system',
+#         'USER': 'root',
+#         'PASSWORD':"',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
+
 
 DATABASES = {
     'default': {
@@ -125,9 +122,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
 
